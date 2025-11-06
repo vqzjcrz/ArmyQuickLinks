@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            font-family:"Helvetica";
+            color:white;
+        }
+        body{
+            background-color: #000;
+        }
+        #nav{
+            width:100vw;
+            height:50px;
+            top:0;
+            left:0;
+            position:relative;
+            background-color:#2b2b2b;
+            display:flex;
+            justify-content:center;
+            align-items: center;
+            border-bottom: 1px solid #b2b2b2;
+        }
+        #ti{
+            position:absolute;
+            left:7px;
+            top:7px;
+        }
+        #sbtn, #cent>input{
+            padding:5px;
+            border-radius: 0;
+            width:auto;
+            border:none;
+            text-align: center;
+            color:black;
+        }
+        #content-box{
+
+            top:50px;
+            width:100%;
+            height:100%;
+            position:relative;
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            justify-items: center;
+            align-items: center;
+            row-gap: 50px;
+        }
+        .content{
+            width:300px;
+            height: 150px;
+            background-color: #3a3a3a;
+            display:flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items:center;
+            border-radius:20px;
+            border: 1px solid #b2b2b2;
+
+        }
+        .content>img,.content>h3{
+            max-width:100%;
+            padding:10px 0px 10px 0px;
+            display:block;
+            text-align: center;
+            max-height: 70px;
+        }
+        a{
+            text-decoration: none;
+        }
+
+        .warno{
+
+            width:100vw;
+            height:auto;
+            background-color:#000;
+            bottom:0;
+            padding:0px 0px 10px 0px;
+            margin:0;
+            position: absolute;
+
+        }
+
+        .txt{
+
+            color:#fff;
+            transform:translateX(0);
+            animation: flashing 0.5s infinite, movin 5s linear infinite alternate;
+            position:relative;
+            display: inline-block;
+
+        }
+
+        @keyframes flashing {
+            0% {color:red;}
+            50% {color:white;}
+            100% {color:red;}
+        }
+        @keyframes movin {
+            0% {transform:translateX(0)}
+            50% {transform:translateX(calc(100vw - 100%));}
+        }
+
+    </style>
+    <title>Links</title>
+</head>
+<body>
+    <div id="nav">
+
+        <h1 id="ti">Links</h1>
+
+        <div id="cent">
+
+        <input type="text" placeholder='https://google.com'>
+        <button id="sbtn">Submit</button>
+
+        </div>
+
+    </div>
+    <div id="content-box">
+
+        <a href="https://www.hrc.army.mil/" target="_blank">
+        <div class="content">
+            <img src="https://www.hrc.army.mil/assets/images/Insignia_HRC.png" alt="hrc img">
+            <h3>HRC</h3>
+        </div>
+        </a>
+
+        <a href="https://ipps-a.army.mil/" target="_blank">
+        <div class="content">
+            <img src="https://ipps-a.army.mil/Portals/129/Armylogo.png?ver=mhMhGVuO6o-cX2WyeQUQDA%3d%3d" alt="ippsa img">
+            <h3>IPPS-A</h3>
+        </div>
+        </a>
+
+        <a href="https://iperms.hrc.army.mil/login/" target="_blank">
+        <div class="content">
+            <img src="https://iperms.hrc.army.mil/img/iperms-logo-333.png" alt="iperms img">
+            <h3>IPERMS</h3>
+        </div>
+        </a>
+
+        <a href="https://medpros.mods.army.mil/Portal/#/" target="_blank">
+        <div class="content">
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F008%2F513%2F517%2Foriginal%2Fmedical-symbol-caduceus-snake-with-stick-png.png&f=1&nofb=1&ipt=7e2ff001dad6a06c3044902135bfc647ec242c2196cc22ea3f33719db98752e0" alt="medpros img">
+            <h3>MEDPROS</h3>
+        </div>
+        </a>
+
+        <a href="https://mypay.dfas.mil/#/" target="_blank">
+        <div class="content">
+            <img src="https://mypay.dfas.mil/assets/images/dfas_logo_screen_transparent.png" alt="dfas img">
+            <h3>MyPay</h3>
+        </div>
+        </a>
+
+        <a href="https://armypubs.army.mil/" target="_blank">
+        <div class="content">
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fb.thumbs.redditmedia.com%2Fl3UE1u0VRukaffUNU-vJizLdoxUUOo8YcfoLMo9E0cA.png&f=1&nofb=1&ipt=04af9ec1f280f588112e7ca5574d99eba46e1388958f66058424d7fbfbdba4cb" alt="pubs img">
+            <h3>Army Pubs</h3>
+        </div>
+        </a>
+
+        <a href="https://fmsweb.army.mil/" target="_blank">
+        <div class="content">
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.O9WOVaxSHkR-im8UJCAnfgAAAA%3Fcb%3D12%26pid%3DApi&f=1&ipt=783e5bb38513c6400e83fa2e0bfe4e2259ed579533018923c6af5ac1ab873c14&ipo=images" alt="fms img">
+            <h3>FMSWeb</h3>
+        </div>
+        </a>
+
+        <a href="https://seam.army.mil/tacom" target="_blank">
+        <div class="content">
+            <img src="https://seam.army.mil/3f7406c0973426d0e0a17ff11153af1d.iix" alt="OCIE Seam img">
+            <h3>OCIE Seam</h3>
+        </div>
+        </a>
+
+        <a href="https://armyeitaas.sharepoint-mil.us/teams/S1NETHomePage/SitePages/Home.aspx" target="_blank">
+        <div class="content">
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%2Fid%2FOIP.RMYhG0pROjvuWIdB4rzjJQHaHP%3Fcb%3D12%26pid%3DApi&f=1&ipt=955e7f8cc2a5f8cbfa7d1126717804decc2e3dcf0fe7aa1e9cba3597f34c26bd&ipo=images" alt="sharepoint img">
+            <h3>S1NET Sharepoint</h3>
+        </div>
+        </a>
+
+        <a href="https://patientportal.mhsgenesis.health.mil/" target="_blank">
+        <div class="content">
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%2Fid%2FOIP.MESJtcqfCwOX_JerxEGUaAHaFu%3Fpid%3DApi&f=1&ipt=cb26214d3ff48bde7446753c3364029f97af601dc54bde98dd62f65418842aa2&ipo=images" alt="mhs genesis img">
+            <h3>MHS Genesis</h3>
+        </div>
+        </a>
+
+        <a href="https://www.armymaintenance.com/arma" target="_blank">
+        <div class="content">
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.9pZnrk3HDte6Xn0qLViM8wHaGn%3Fcb%3D12%26pid%3DApi&f=1&ipt=6ada7f24044daf998c332b36ac96262456b30130c96f199b79e514443e312cda&ipo=images" alt="arma img">
+            <h3>ARMA</h3>
+        </div>
+        </a>
+
+        <a href="https://print.army.mil/" target="_blank">
+        <div class="content">
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi0.wp.com%2Fsecurityaffairs.com%2Fwp-content%2Fuploads%2F2022%2F01%2Fprinterlogic-logo.png%3Ffit%3D920%252C500%26ssl%3D1&f=1&nofb=1&ipt=2250c1c1424760b05ac2a867f33f062778038c5a53aa3c09a335ef49b8c7666f" alt="printerlogic img">
+            <h3>Army Printers</h3>
+        </div>
+        </a>
+
+    </div>
+
+<footer class="warno">
+
+    <h2 class="txt">ASWF, PLEASE ACCEPT MY APPLICATION!!!</h2>
+
+</footer>
+
+</body>
+
+</html>
